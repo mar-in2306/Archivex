@@ -15,6 +15,7 @@ public interface DocumentTypeMapper {
     @Mapping(target = "organization", ignore = true)
     @Mapping(target = "documents", ignore = true)
     @Mapping(target = "workflowSteps", ignore = true)
+    @Mapping(target = "id", ignore = true)
     DocumentTypeEntity toEntity(DocumentTypeDTO dto);
 
     List<DocumentTypeDTO> toDTOList(List<DocumentTypeEntity> entities);
