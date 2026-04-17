@@ -1,0 +1,155 @@
+package com.archivex.archivex.persistenceLayer.mapper;
+
+import com.archivex.archivex.business.dto.DocumentDTO;
+import com.archivex.archivex.persistenceLayer.entity.DocumentEntity;
+import com.archivex.archivex.persistenceLayer.entity.DocumentTypeEntity;
+import com.archivex.archivex.persistenceLayer.entity.OrganizationEntity;
+import com.archivex.archivex.persistenceLayer.entity.UserEntity;
+import java.util.ArrayList;
+import java.util.List;
+import javax.annotation.processing.Generated;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2026-04-10T15:49:43-0500",
+    comments = "version: 1.6.3, compiler: Eclipse JDT (IDE) 3.45.0.v20260224-0835, environment: Java 21.0.10 (Eclipse Adoptium)"
+)
+@Component
+public class DocumentMapperImpl implements DocumentMapper {
+
+    @Override
+    public DocumentDTO toDTO(DocumentEntity entity) {
+        if ( entity == null ) {
+            return null;
+        }
+
+        DocumentDTO documentDTO = new DocumentDTO();
+
+        documentDTO.setOrganizationId( entityOrganizationId( entity ) );
+        documentDTO.setDocumentTypeId( entityDocumentTypeId( entity ) );
+        documentDTO.setDocumentTypeName( entityDocumentTypeName( entity ) );
+        documentDTO.setCreatedById( entityCreatedById( entity ) );
+        documentDTO.setCreatedByName( entityCreatedByName( entity ) );
+        documentDTO.setCreatedAt( entity.getCreatedAt() );
+        documentDTO.setDescription( entity.getDescription() );
+        documentDTO.setFileName( entity.getFileName() );
+        documentDTO.setFilePath( entity.getFilePath() );
+        documentDTO.setFileSize( entity.getFileSize() );
+        documentDTO.setFileType( entity.getFileType() );
+        documentDTO.setId( entity.getId() );
+        documentDTO.setStatus( entity.getStatus() );
+        documentDTO.setTitle( entity.getTitle() );
+        documentDTO.setUpdatedAt( entity.getUpdatedAt() );
+
+        return documentDTO;
+    }
+
+    @Override
+    public DocumentEntity toEntity(DocumentDTO dto) {
+        if ( dto == null ) {
+            return null;
+        }
+
+        DocumentEntity documentEntity = new DocumentEntity();
+
+        documentEntity.setCreatedAt( dto.getCreatedAt() );
+        documentEntity.setDescription( dto.getDescription() );
+        documentEntity.setFileName( dto.getFileName() );
+        documentEntity.setFilePath( dto.getFilePath() );
+        documentEntity.setFileSize( dto.getFileSize() );
+        documentEntity.setFileType( dto.getFileType() );
+        documentEntity.setId( dto.getId() );
+        documentEntity.setStatus( dto.getStatus() );
+        documentEntity.setTitle( dto.getTitle() );
+        documentEntity.setUpdatedAt( dto.getUpdatedAt() );
+
+        return documentEntity;
+    }
+
+    @Override
+    public List<DocumentDTO> toDTOList(List<DocumentEntity> entities) {
+        if ( entities == null ) {
+            return null;
+        }
+
+        List<DocumentDTO> list = new ArrayList<DocumentDTO>( entities.size() );
+        for ( DocumentEntity documentEntity : entities ) {
+            list.add( toDTO( documentEntity ) );
+        }
+
+        return list;
+    }
+
+    @Override
+    public void updateEntityFromDTO(DocumentDTO dto, DocumentEntity entity) {
+        if ( dto == null ) {
+            return;
+        }
+
+        if ( dto.getDescription() != null ) {
+            entity.setDescription( dto.getDescription() );
+        }
+        if ( dto.getFileName() != null ) {
+            entity.setFileName( dto.getFileName() );
+        }
+        if ( dto.getFilePath() != null ) {
+            entity.setFilePath( dto.getFilePath() );
+        }
+        if ( dto.getFileSize() != null ) {
+            entity.setFileSize( dto.getFileSize() );
+        }
+        if ( dto.getFileType() != null ) {
+            entity.setFileType( dto.getFileType() );
+        }
+        if ( dto.getStatus() != null ) {
+            entity.setStatus( dto.getStatus() );
+        }
+        if ( dto.getTitle() != null ) {
+            entity.setTitle( dto.getTitle() );
+        }
+        if ( dto.getUpdatedAt() != null ) {
+            entity.setUpdatedAt( dto.getUpdatedAt() );
+        }
+    }
+
+    private Long entityOrganizationId(DocumentEntity documentEntity) {
+        OrganizationEntity organization = documentEntity.getOrganization();
+        if ( organization == null ) {
+            return null;
+        }
+        return organization.getId();
+    }
+
+    private Long entityDocumentTypeId(DocumentEntity documentEntity) {
+        DocumentTypeEntity documentType = documentEntity.getDocumentType();
+        if ( documentType == null ) {
+            return null;
+        }
+        return documentType.getId();
+    }
+
+    private String entityDocumentTypeName(DocumentEntity documentEntity) {
+        DocumentTypeEntity documentType = documentEntity.getDocumentType();
+        if ( documentType == null ) {
+            return null;
+        }
+        return documentType.getName();
+    }
+
+    private Long entityCreatedById(DocumentEntity documentEntity) {
+        UserEntity createdBy = documentEntity.getCreatedBy();
+        if ( createdBy == null ) {
+            return null;
+        }
+        return createdBy.getId();
+    }
+
+    private String entityCreatedByName(DocumentEntity documentEntity) {
+        UserEntity createdBy = documentEntity.getCreatedBy();
+        if ( createdBy == null ) {
+            return null;
+        }
+        return createdBy.getName();
+    }
+}
