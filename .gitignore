@@ -1,0 +1,72 @@
+# =========================
+# JAVA / SPRING BOOT
+# =========================
+
+target/
+build/
+out/
+
+*.class
+*.jar
+*.war
+*.ear
+
+.gradle/
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VSCode Java
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# =========================
+# ANGULAR
+# =========================
+
+node_modules/
+dist/
+.angular/
+.tmp/
+coverage/
+
+# Angular cache
+.cache/
+
+# Environment files
+src/environments/*.local.ts
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# GENERAL
+# =========================
+
+.env
+.env.local
+
+# Generated files
+/generated/
+
+# OneDrive temp
+~$*
