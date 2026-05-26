@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Pruebas del servicio de Organizaciones" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-05-17T18:18:34.862Z" hostname="LAPTOP-ESGPM6RN" time="0.902">
+  <properties/>
+  <testcase name="PRUEBA 1 - Crear organización exitosamente" classname="com.archivex.archivex.business.service.OrganizationServiceTest" time="0.871"/>
+  <testcase name="PRUEBA 5 - Listar todas las organizaciones" classname="com.archivex.archivex.business.service.OrganizationServiceTest" time="0.005"/>
+  <testcase name="PRUEBA 3 - Obtener organización por ID existente" classname="com.archivex.archivex.business.service.OrganizationServiceTest" time="0.003"/>
+  <testcase name="PRUEBA 6 - Eliminar organización existente" classname="com.archivex.archivex.business.service.OrganizationServiceTest" time="0.006"/>
+  <testcase name="PRUEBA 4 - Lanzar excepción si organización no existe" classname="com.archivex.archivex.business.service.OrganizationServiceTest" time="0.004"/>
+  <testcase name="PRUEBA 2 - No crear organización con dominio duplicado" classname="com.archivex.archivex.business.service.OrganizationServiceTest" time="0.006"/>
+  <system-out><![CDATA[13:18:35.706 [Test worker] INFO com.archivex.archivex.business.service.impl.OrganizationServiceImpl -- Creando organización: Mi Empresa
+13:18:35.712 [Test worker] INFO com.archivex.archivex.business.service.impl.OrganizationServiceImpl -- Organización creada con ID: 1
+13:18:35.750 [Test worker] INFO com.archivex.archivex.business.service.impl.OrganizationServiceImpl -- Eliminando organización ID: 1
+13:18:35.752 [Test worker] INFO com.archivex.archivex.business.service.impl.OrganizationServiceImpl -- Organización eliminada ID: 1
+13:18:35.762 [Test worker] INFO com.archivex.archivex.business.service.impl.OrganizationServiceImpl -- Creando organización: Otra Empresa
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\titom\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.7\fbf3d6d649ed37fc9e9c59480a05be0a26e3c2da\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

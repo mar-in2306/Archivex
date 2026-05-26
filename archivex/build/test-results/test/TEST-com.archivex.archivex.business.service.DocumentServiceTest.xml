@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Pruebas del servicio de Documentos" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-04-17T03:46:01.350Z" hostname="LAPTOP-ESGPM6RN" time="0.976">
+  <properties/>
+  <testcase name="PRUEBA 17 - Cambiar estado CREATED → UNDER_REVIEW (transición válida)" classname="com.archivex.archivex.business.service.DocumentServiceTest" time="0.937"/>
+  <testcase name="PRUEBA 15 - Obtener documento por ID y organización" classname="com.archivex.archivex.business.service.DocumentServiceTest" time="0.01"/>
+  <testcase name="PRUEBA 14 - Rechazar documento con título vacío" classname="com.archivex.archivex.business.service.DocumentServiceTest" time="0.008"/>
+  <testcase name="PRUEBA 18 - Rechazar transición de estado inválida (APPROVED → CREATED)" classname="com.archivex.archivex.business.service.DocumentServiceTest" time="0.007"/>
+  <testcase name="PRUEBA 16 - Listar documentos por organización" classname="com.archivex.archivex.business.service.DocumentServiceTest" time="0.003"/>
+  <testcase name="PRUEBA 13 - Crear documento exitosamente sin archivo" classname="com.archivex.archivex.business.service.DocumentServiceTest" time="0.006"/>
+  <system-out><![CDATA[22:46:02.260 [Test worker] INFO com.archivex.archivex.business.service.impl.DocumentServiceImpl -- Cambiando estado de documento ID: 1 a UNDER_REVIEW
+22:46:02.307 [Test worker] INFO com.archivex.archivex.business.service.impl.DocumentServiceImpl -- Creando documento: '' en org: 1
+22:46:02.313 [Test worker] INFO com.archivex.archivex.business.service.impl.DocumentServiceImpl -- Cambiando estado de documento ID: 1 a CREATED
+22:46:02.323 [Test worker] INFO com.archivex.archivex.business.service.impl.DocumentServiceImpl -- Creando documento: 'Contrato de Servicios' en org: 1
+22:46:02.325 [Test worker] INFO com.archivex.archivex.business.service.impl.DocumentServiceImpl -- Documento creado con ID: 1
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\titom\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.7\fbf3d6d649ed37fc9e9c59480a05be0a26e3c2da\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

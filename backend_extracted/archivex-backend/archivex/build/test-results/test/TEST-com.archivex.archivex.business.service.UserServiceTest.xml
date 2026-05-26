@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Pruebas del servicio de Usuarios" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-05-17T18:18:35.774Z" hostname="LAPTOP-ESGPM6RN" time="0.116">
+  <properties/>
+  <testcase name="PRUEBA 8 - No crear usuario con email duplicado" classname="com.archivex.archivex.business.service.UserServiceTest" time="0.091"/>
+  <testcase name="PRUEBA 9 - Rechazar contraseña menor a 6 caracteres" classname="com.archivex.archivex.business.service.UserServiceTest" time="0.004"/>
+  <testcase name="PRUEBA 11 - Listar usuarios por organización" classname="com.archivex.archivex.business.service.UserServiceTest" time="0.003"/>
+  <testcase name="PRUEBA 7 - Crear usuario exitosamente" classname="com.archivex.archivex.business.service.UserServiceTest" time="0.005"/>
+  <testcase name="PRUEBA 10 - Obtener usuario por ID existente" classname="com.archivex.archivex.business.service.UserServiceTest" time="0.004"/>
+  <testcase name="PRUEBA 12 - Toggle de estado activo/inactivo del usuario" classname="com.archivex.archivex.business.service.UserServiceTest" time="0.005"/>
+  <system-out><![CDATA[13:18:35.864 [Test worker] INFO com.archivex.archivex.business.service.impl.UserServiceImpl -- Creando usuario con email: admin@miempresa.com
+13:18:35.869 [Test worker] INFO com.archivex.archivex.business.service.impl.UserServiceImpl -- Creando usuario con email: user@empresa.com
+13:18:35.877 [Test worker] INFO com.archivex.archivex.business.service.impl.UserServiceImpl -- Creando usuario con email: admin@miempresa.com
+13:18:35.878 [Test worker] INFO com.archivex.archivex.business.service.impl.UserServiceImpl -- Usuario creado con ID: 1
+13:18:35.887 [Test worker] INFO com.archivex.archivex.business.service.impl.UserServiceImpl -- Cambiando estado del usuario ID: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

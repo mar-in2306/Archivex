@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Pruebas del servicio de Documentos" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-05-17T18:18:35.900Z" hostname="LAPTOP-ESGPM6RN" time="0.117">
+  <properties/>
+  <testcase name="PRUEBA 17 - Cambiar estado CREATED → UNDER_REVIEW (transición válida)" classname="com.archivex.archivex.business.service.xDocumentServiceTest" time="0.094"/>
+  <testcase name="PRUEBA 15 - Obtener documento por ID y organización" classname="com.archivex.archivex.business.service.xDocumentServiceTest" time="0.003"/>
+  <testcase name="PRUEBA 14 - Rechazar documento con título vacío" classname="com.archivex.archivex.business.service.xDocumentServiceTest" time="0.004"/>
+  <testcase name="PRUEBA 18 - Rechazar transición de estado inválida (APPROVED → CREATED)" classname="com.archivex.archivex.business.service.xDocumentServiceTest" time="0.005"/>
+  <testcase name="PRUEBA 16 - Listar documentos por organización" classname="com.archivex.archivex.business.service.xDocumentServiceTest" time="0.004"/>
+  <testcase name="PRUEBA 13 - Crear documento exitosamente sin archivo" classname="com.archivex.archivex.business.service.xDocumentServiceTest" time="0.004"/>
+  <system-out><![CDATA[13:18:35.990 [Test worker] INFO com.archivex.archivex.business.service.impl.DocumentServiceImpl -- Cambiando estado de documento ID: 1 a UNDER_REVIEW
+13:18:36.000 [Test worker] INFO com.archivex.archivex.business.service.impl.DocumentServiceImpl -- Creando documento: '' en org: 1
+13:18:36.006 [Test worker] INFO com.archivex.archivex.business.service.impl.DocumentServiceImpl -- Cambiando estado de documento ID: 1 a CREATED
+13:18:36.015 [Test worker] INFO com.archivex.archivex.business.service.impl.DocumentServiceImpl -- Creando documento: 'Contrato de Servicios' en org: 1
+13:18:36.016 [Test worker] INFO com.archivex.archivex.business.service.impl.DocumentServiceImpl -- Documento creado con ID: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
